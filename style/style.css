@@ -1,0 +1,382 @@
+/* saumon logo : #F5CA99 */
+/* rouge logo : #E95846 */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    list-style-type: none;
+  }
+  
+  /* Top Row  */
+  
+  .top-container {
+    background-color:#F97863;
+    background-image: url(../images/robert-katzki-unsplash-compress.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70%;
+    margin: 0 0 8% 0;
+    padding: 0 7% 0 7%;
+    color: #fff;
+  }
+  
+  /* .top-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 10% 3%;
+  }
+  
+  .top-logo {
+    height: 95%;
+  }
+  
+  .top-button {
+    box-sizing: content-box;
+    min-width: 150px;
+    width: 16%;
+    height: 3rem;
+    border-radius: 28px;
+    text-shadow: 1px 1px 2px #666666;
+    box-shadow: 0 0 3px #666666;
+    color: #000000;
+    background: #ffffff;
+    border: solid hsl(208, 11%, 55%) 1px;
+    text-decoration: none;
+  }
+  
+  .top-button:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+   */
+  /* Top Container Content */
+  
+  .top-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .top-text {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 10% 10% 0 10%;
+    margin: 0 0 10% 0;
+  }
+  
+  /* .top-img {
+    width: 100%;
+    min-height: 85%;
+    padding: 0 10% 0 0;
+  } */
+  
+  .top-heading {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+  
+  /* .button {
+    box-sizing: content-box;
+    width: 40%;
+    margin: 5% 0;
+    min-width: 200px;
+    height: 3.4rem;
+    border-radius: 28px;
+    text-shadow: 1px 1px 2px #666666;
+    box-shadow: 0 0 3px #666666;
+    color: #fff;
+    background: hsl(322, 100%, 66%);
+    border: solid hsl(208, 11%, 55%) 1px;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    text-decoration: none;
+    cursor: pointer;
+  } */
+  
+  /* Content Boxes*/
+  
+  .container {
+    background-color: #fff;
+    width: 75%;
+    margin: 2% 12.5%;
+    box-shadow: 0 0 4px 4px rgba(233, 89, 70, 0.514);
+    border-radius: 20px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  
+  .main-text {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10% 0 20%;
+  }
+  
+  .main-img {
+    padding: 3% 5%;
+    width: 100%;
+  }
+
+/* unvisited link */
+
+  a:link {
+    color: #E95846;
+    text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #F97863;
+    text-decoration: none;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #D8402F;
+    text-decoration: underline;
+  }
+
+  /* selected link */
+  a:active {
+    color: #F5CA99;
+    text-decoration: underline;
+  }
+  
+  /* Call to Action */
+  
+  /* .cta {
+    background-color: #fff;
+    width: 50%;
+    margin: 5% 25% 0;
+    box-shadow: 0 0 4px 4px #d9dde2;
+    border-radius: 20px;
+    position: relative;
+    top: 5rem;
+    z-index: 2;
+  }
+  
+  .cta-flex {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+  
+  .bottom-text-btn-container {
+    padding: 0 0 5% 0;
+  }
+  
+  .button.bottom-text-btn {
+    width: 300px;
+    margin: 3% 0;
+  }
+  
+  .bottom-text-btn:hover {
+    text-decoration: none;
+    cursor: pointer;
+  } */
+  
+  /* Footer  */
+  
+  .footer-container {
+    background-color: #F97863;
+    background-image: url(../images/robert-katzki-unsplash-compress.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    z-index: 1;
+    padding: 5% 0 5% 0;
+    margin: 8% 0 0 0;
+    color: #fff;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 5% 0 5%;
+  }
+
+  .fab-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 15% 0 0 0;
+  }
+  
+  .email {
+    margin: 0 0 15% 0;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10% 0 10%;
+  }
+  
+  /* .footer-img {
+    padding-right: 4%;
+  } */
+  
+  /* .list { */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* désactivé depuis longtemps bottom: 5%; */
+  /* } */
+  
+  /* .icons {
+    padding: 5%;
+  } */
+  
+  .fab {
+    font-size: 1.75rem;
+    /* padding: 10%; */
+    padding: 0 33% 0 33%;
+    margin: 0 10% 0 10%;
+    position: relative;
+    bottom: 25%;
+    color: #fff;
+  }
+
+  .mail {
+    color: #fff;
+    text-decoration: underline #fff;
+  }
+
+  /* .cpright {
+    text-align: right;
+    font-size: 1rem;
+  } */
+  
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+  
+    .top-container {
+      background-image: url(../images/robert-katzki-unsplash-resize.jpg);
+      padding: 0;
+    }
+  
+    .top-grid {
+      display: block;
+    }
+  
+    /* .top-row {
+      padding: 3% 3% 15%;
+    }
+  
+    .top-button {
+      height: 30px;
+    } */
+  
+    .main-text {
+      grid-area: text;
+    }
+  
+    .main-img {
+      grid-area: image;
+    }
+  
+    .grid {
+      grid-template-columns: 100%;
+      grid-template-areas: "text"
+    }
+  
+    .top-text {
+      align-items: center;
+      padding: 0 5% 0 5%;
+      margin:0;
+    }
+  
+    /* .top-img {
+      width: 50%;
+      padding: 0 10% 0 10%;
+    } */
+  
+    .top-paragraph {
+      align-items: center;
+      padding: 0 4% 5% 4%;
+    }
+  
+    .container {
+      min-height: 500px;
+    }
+  
+    .heading, .main-text, .main-img, .top-paragraph, .top-heading/*, .cpright*/ {
+      text-align: center;
+    }
+  
+    .main-text, .main-img {
+      align-items: center;
+      padding: 10% 5%;
+    }
+  
+    .cta {
+      width: 95%;
+      margin: 5% 0 0 2.5%;
+    }
+
+    .footer-container {
+      background-image: url(../images/robert-katzki-unsplash-resize.jpg);
+      padding: 0;
+    }
+  
+    .footer-grid {
+      display: block;
+      padding: 0;
+      margin: 15% 0 0;
+    }
+  
+    .footer-item {
+      margin: 0 2.5% 0 2.5%;
+    }
+
+    ul {
+      padding: 0;
+    }
+  
+    .email {
+      font-size: 17px;
+    }
+  
+    .list {
+      padding: 0;
+      margin: 0;
+    }
+  
+    li:last-child {
+      margin-bottom: 0;
+    }
+  
+    .icons {
+      justify-content: center;
+    }
+  
+    /* .cpright {
+      font-size: 0.9rem
+    } */
