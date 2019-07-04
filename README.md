@@ -1,4 +1,5 @@
-# portfolio_AK_2019   
+# portfolio Audrey Kremers, Bruxelles.
+# Front-end développement.
    
 Portfolio de mes travaux au sein de BeCode. Janvier à mai 2019.   
     
