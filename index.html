@@ -7,9 +7,12 @@
   <!-- Stylesheet, then fonts, then fontawesome -->
   <!-- <link rel="stylesheet" href="reset.css"> -->
   <link rel="stylesheet" href="style/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Cabin:400,400i|Raleway:700,700i&display=swap" rel="stylesheet">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="./images/logoAudreyKremers35x35.jpg">
-  <title>Audrey KREMERS | Front End Dev | Bruxelles</title>
+  <title>Audrey Kremers portfolio | Web Developer | Brussels</title>
   <script src="https://kit.fontawesome.com/932b8f3272.js"></script>
 </head>
 
@@ -20,19 +23,125 @@
         <img class="top-logo" src="images/logo.svg" alt="">
         <button class="top-button" type="button" name="button">Try It Free</button>
       </div> -->
+      <!-- Navbar -->
+      <!-- <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div> -->
+      <!-- Fin Navbar -->
+
+      <!-- Navbar FULL SCREEN-->
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="icon" onclick="openNav()"><i class="fa fa-bars"></i></span>
+      <!-- Fin Navbar FULL SCREEN-->
+
       <div class="top-grid">
         <div class="top-text">
-          <h1 class="top-heading">AUDREY KREMERS<br />Développeuse<br />Front-End<br />Bruxelles</h1>
-          <!-- <p class="top-paragraph">Junior mais investie, empreinte d'UX design et désireuse d'en apprendre toujours plus.<br /><br />HTML, CSS, JavaScript, Sass, PHP, React JS et plus dans un avenir très proche...</p> -->
+          <h2 class="top-heading">AUDREY KREMERS</h2>
+          <h1 class="top-heading">Web développeuse</h1>
+          <h1 class="top-heading">Front-End</h1>
+          <h2 class="top-heading">Brussels, Belgium</h2>
           <!-- <button class="button" type="button" name="button">Get Started For Free</button> -->
         </div>
         <div class="top-text">
-          <p class="top-paragraph">Voici mon portfolio de janvier à mai 2019.<br /><br />Junior investie, empreinte d'UX design, désireuse d'en apprendre toujours plus.<br /><br />HTML, CSS, JavaScript, PHP, Vue JS, React JS, WordPress et plus dans un avenir proche...</p>
           <!-- <img class="top-img" src="images/audrey-krem-resizeimage.jpg" alt="top-img-photo-audrey"> -->
+            <h1>HTML, CSS, JS, PHP</h1>
+            <h1>Sass, Vue.js, Laravel</h1>
+            <h3>Visual Studio Code, Git</h3>
+            <h2>Figma, Sketch</h2>
+            <h2>BEE Pro, Email on Acid</h2>
         </div>
       </div>
     </section>
 
+    <!-- <section class="container-speech">
+      <div class="grid-speech">
+        <h2 class="heading-speech">Pourquoi et comment suis-je devenue junior web développeur ?</h2>
+        <div class="main-text-speech-1">
+          <p class="top-speech">Septembre 2018. Non diplômée, en 15 ans d'expériences professionnelles, j'avais fait le tour des métiers qui m'étaient "accessibles". Malgré les indéniables possibilités d'évolution même sans diplôme, le besoin d'acquérir de nouvelles compétences et d'appartenir à un réseau professionnel plus restreint commençait à m'obséder. J'ai alors fait le point sur mes centres d'intérêts, mes attentes, mes qualités et sur l'avenir du marché de l'emploi. Toutes ces données croisées plaçaient le développement web dans le haut de la liste des pistes à explorer.</p>
+            
+          <p class="top-speech">Octobre 2018. Étant une touche-à-tout autodidacte, je me mis donc à explorer, entre autres, mes affinités avec la programmation. Sur internet, je suivais mes premières leçons grâce à l'active contribution d'une immense communauté de passionnés. En quelques semaines, plus aucun doute, ce que j'apprenais me plaisait et c'était de cette communauté d'altruistes que je voulais faire partie.</p>
+        </div>
+        <div class="main-text-speech-2">   
+          <p class="top-speech">Novembre 2018. Un centre de formation nommé <a href="http://becode.org/" target="blank">BeCode</a> retenu toute mon attention. Vantant les mérites d'une pédagogie active, ils proposent une formation de sept mois en développement web ouverte à tous, du débutant au diplômé en informatique. Parfait pour moi qui suis réfractaire à la pédagogie frontale de l'enseignement traditionnel. Enthousiaste, je leurs soumettais ma candidature dans l'espoir de pouvoir passer les prochaines sélections.</p>
+            
+          <p class="top-speech">Décembre 2018. BeCode m'invitait à participer à la phase de test finale. Pas moins de 90 candidats étaient présents pour passer l'entretien de motivation, le test technique et pour réaliser, par équipe de trois participants, un exercice inattendu de brainstorming d'une heure afin de présenter oralement en 3 minutes un projet commun. Même si la concurrence me semblait être de taille, comme je passais une journée exaltante, mon optimisme était inébranlable. Dès le lendemain, je reçus un email de BeCode m'apprenant que j'avais relevé tous les défis avec succès. J'étais admise à suivre la formation en web développement.</p>
+         </div>
+         <div class="main-text-speech-3">
+          <p class="top-speech">De janvier à juillet 2019, entourée de 20 autres apprenants et de deux coachs, Emily Marghella et Kevin Flabat, je n'ai cessé d'apprendre. Apprendre un langage ou framework de façon autodidacte en surfant sur la toile. Apprendre à travailler en groupe en s'organisant avec méthodologie (Scrum, Kanban). Apprendre à se focaliser sur le cahier des charges en respectant la deadline. Apprendre à persévérer face à un problème persistant. Apprendre à analyser toutes les étapes d'un projet client et à conclure un accord formel avec lui. Apprendre à manager une équipe sur un projet et à gérer les relations client. En m'imposant un rythme n'autorisant aucun répit durant sept mois, BeCode me fit découvrir l'atout majeur d'un bon web développeur : sa capacité à se surpasser sans cesse. Car l'apprentissage du web dévelopement est infini.</p>
+            
+          <p class="top-speech">Août 2019. S'en suit, mon stage de trois mois chez EVO Group, expert en marketing de performance et stratégie web. Le chef du département IT, Philippe Berton est un homme bienveillant. Il avait pensé pour moi à un programme qui éttoferait mon CV. Dès mon arrivée, il m'exposait globalement les tâches que j'aurais à accomplir seule. Pour me guider si besoin, je pouvais compter sur une petite équipe composée d'un développeur back end, Ümit Akgün et de deux développeurs front end, Corentin Noirot et Titouan Miart. Grâce au plan de mon chef, en fin de stage, j'avais acquis deux compétences spécifiques à faire valoir sur mon CV : le passage de pages en AMP (Accelerated Mobile Pages) et la création de newsletters en HTML/CSS à partir d'une maquette. J'avais aussi codé entièrement, à partir d'une maquette, le nouveau site d'EVO Group contenant : un formulaire à valider à chaque étape, un carrousel et une zone de contenu faisant appel à une API. J'avais aussi appris à coder à l'identique les designs parfois complexes crées par les graphistes et attendus par les clients. D'ailleurs, c'est l'attention que je porte aux détails qui a été le plus apprécié par mon chef et par les analystes de données marketing qui ont vu croître le taux de participation aux campagnes emailing dont j'avais été en charge.</p>
+        </div>
+        <div class="main-text-speech-4">   
+          <p class="top-speech">Aujourd'hui, les langages et frameworks que j'affectionne sont : HTML, CSS, JavaScript, PHP, Sass, Vue.js et Laravel. Mon éditeur de texte favori est Visual Studio Code. J'utilise fréquemment Git, Figma, Sketch, BEE Pro et Email on Acid. Interessée par l'UX design, je souhaite apprendre auprès de spécialistes.</p>
+        </div>
+      </div>
+    </section> -->
+    
+    <!-- Slideshow container -->
+    <section class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="image-container"><img src="./images/salon-woman.svg"></div>
+        <div class="numbertext">De octobre à décembre 2018</div>
+        <div class="text slide1">Après 15 ans d'expériences professionnelles, j'ai eu l'envie d'acquérir de nouvelles compétences. J'ai fait le point sur mes centres d'intérêts, mes attentes et le marché de l'emploi. Résultat : c'est le développement web qui m'a le plus attisé ma curiosité. J'ai facilement trouvé des leçons en ligne gâce à l'immense communauté de passionnés qui partagent leur savoir sur le sujet.</p><p class="text">Quelques semaines de familiarisation plus tard, les inscriptions sont ouvertes pour une formation en développement web de sept mois chez <a href="http://becode.org/" target="blank">BeCode</a>. Avant-gardiste, ils ont adopté la méthode pédagogique active qui est l'idéale pour moi. Enthousiaste, je candidate et suis invitée à la phase finale de sélection.</p><p class="text">90 candidats sont présents pour passer un entretien de motivation, des tests techniques et réaliser un exercice coopératif et créatif à présenter oralement. Comme j'y passais une journée exaltante, même si la concurrence était de taille, mon optimisme atteignait des sommets. Dès le lendemain, BeCode m'informa que j'étais l'une des 40 admis en formation développeur web.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="image-container"><img src="./images/object-purple.svg"></div>
+        <div class="numbertext">De janvier à juillet 2019</div>
+        <div class="text slide2"><p class="text">Entourée de 20 autres apprenants et deux coachs, Emily Marghella et Kevin Flabat, je n'ai cessé d'apprendre. Apprendre de façon autodidacte différents langages de programmation et frameworks. Apprendre avec méthodologie <i>- Scrum, Kanban -</i> à travailler en équipe. Apprendre à changer d'angle de vue lorsqu'une dificulté persiste.</p><p class="text">Apprendre à faire un inventaire de projet web afin de faire au client une proposition d'accord formel réaliste. Apprendre à manager une équipe et à gérer la relation client.</p><p class="text">En me soumetant à un rythme de travail croissant durant sept mois, BeCode m'a faite comprendre par expérience que la réussite d'un développeur web réside en sa capacité à se surpasser sans cesse en y prennant plaisir.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="image-container"><img src="./images/office-woman.svg"></div>
+        <div class="numbertext">De août à novembre 2019</div>
+        <div class="text slide3"><p class="text">J'effectuais ensuite un stage de trois mois chez EVO Group, expert en marketing de performance et stratégie web. Les tâches que Philippe Berton, chef du département IT, me confia étaient à exécuter seule. Au besoin, je recevais des indices des développeurs web de l'agence mais ils préservaient mon mode de pensée.</p><p class="text">Grâce à la bienveillance de mon chef et à son programme, mon CV compte deux compétences supplémentaires : le passage de pages web en AMP (Accelerated Mobile Pages) et la création de newsletters en HTML/CSS. À partir d'une maquette, j'ai également codé le nouveau site responsive d'EVO Group qui contient notamment un formulaire multi-step à validation dynamique.</p><p class="text">Mon aptitude à prendre soin des détails a été très appréciée. Les analystes de données marketing ont constaté une augmentation du taux de participation aux campagnes emailing que j'ai réalisée.</div>
+      </div>
+
+      
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">Aujourd'hui</div>
+        <<img src="img5.jpg" style="width:100%">
+        <div class="text">Les langages et frameworks que j'affectionne sont : HTML, CSS, JavaScript, PHP, Sass, Vue.js et Laravel. <br>Mon éditeur de texte favori est Visual Studio Code. J'utilise fréquemment Git, Figma, Sketch, BEE Pro et Email on Acid. <br>Interessée par l'UX design, je souhaite apprendre auprès de spécialistes.</div>
+      </div> -->
+
+      <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <!-- <br> -->
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+    </div>
+
+<!-- <p class="top-speech">Voici mon portfolio de janvier à mai 2019.</p> -->
     <section class="container">
       <div class="grid">
         <div class="main-text">
@@ -132,7 +241,7 @@
           </div> -->
           <div class="footer-item">
             <!-- <img class="footer-img" src="images/icon-location.svg" alt="location-icon"> -->
-            <p>Mon portfolio est 100 % responsive et est réalisé avec HTML & CSS.<br /><br />Je recherche actuellement un stage de 3 mois entre mi-août et mi-novembre. J'aimerais travailler dans un environnement où l'analyse, la créativité et l'UX design ont un rôle prépondérant.<br /><br />N'hésitez pas à me contacter afin d'en savoir plus sur mon parcours et ce que je pourrais apporter à votre équipe.</p>
+            <p>Mon portfolio est 100 % responsive et est réalisé avec HTML & CSS.</p><p class="top-speech">Je recherche actuellement un stage de 3 mois entre mi-août et mi-novembre. J'aimerais travailler dans un environnement où l'analyse, la créativité et l'UX design ont un rôle prépondérant.</p><p class="top-speech">N'hésitez pas à me contacter afin d'en savoir plus sur mon parcours et ce que je pourrais apporter à votre équipe.</p>
           </div>
           <!-- <div class="footer-item">
             <img class="footer-img" src="images/icon-phone.svg" alt="phone-icon">
@@ -205,6 +314,7 @@
       </div> -->
     </footer>
   </main>
+  <script src="./script/script.js"></script>
 </body>
 
 </html>

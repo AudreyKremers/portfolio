@@ -1,22 +1,50 @@
 /* saumon logo : #F5CA99 */
 /* rouge logo : #E95846 */
 
-*, *::before, *::after {
+/* 
+font-family: 'Cabin Sketch', cursive;
+
+font-family: 'Cabin', sans-serif;
+400, 400i
+
+font-family: 'Raleway', sans-serif;
+700,700i
+*/
+
+  :root {
+    font-size: 62.5%;
+  }
+
+  *, *::before, *::after {
     box-sizing: border-box;
   }
   
   body {
-    background-color: #fff;
+    /* background: linear-gradient(#170010, #1A1739, #0E4351);
+    background: radial-gradient(#170010, #1A1739, #0E4351); */
+    background-color: #080A0D;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: 400;
-    font-size: 1.125rem;
+    color: #9F9FA6;
+    /* font-size: calc (21px + (30 - 21) * ((100vw - 768px) / (1600 - 768))); */
+  }
+  /*Avec la fonction font-size: calc*/
+  /* @media screen and (max-width: 768px) { body { font-size: 21px; } } 
+  @media screen and (min-width: 1600px) { body { font-size: 30px; } }  */
+  
+  h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: ;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  h4, h5, h6 {
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 700;
+    font-size: 2.25rem;
   }
   
   li {
@@ -27,14 +55,15 @@
   /* Top Row  */
   
   .top-container {
-    background-color:#F97863;
-    background-image: url(../images/robert-katzki-unsplash-compress.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
     height: 70%;
-    margin: 0 0 8% 0;
-    padding: 0 7% 0 7%;
-    color: #fff;
+    /* margin: 0 0 7% 0; */
+    /* padding: 0 7% 0 7%; */
+    /* background-image: url(../images/bg-top-blk.jpg);
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: #080A0D;
   }
   
   /* .top-row {
@@ -66,36 +95,148 @@
     cursor: pointer;
   }
    */
+
   /* Top Container Content */
-  
+
+  /* Navbar desk*/
+
+  /* Add a black background color to the top navigation */
+  /* .topnav {
+    background-color: #202126;
+    overflow: hidden;
+  } */
+
+  /* Style the links inside the navigation bar */
+  /* .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+
+  /* Change the color of links on hover */
+  /* .topnav a:hover {
+    background-color: #656773;
+    color: white;
+    text-decoration: none;
+  } */
+
+  /* Add an active class to highlight the current page */
+  /* .topnav a.active {
+    background-color: #080A0D;
+    color: white;
+    text-decoration: none;
+  } */
+
+  /* Hide the link that should open and close the topnav on small screens */
+  /* .topnav .icon {
+    display: none;
+  } */
+  /* Fin Navbar */
+
+  /* Navbar FULL SCREEN */
+
+  /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-y: hidden; /* Disable vertical scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  /* .icon {
+    display: none;
+  } */
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  /* Fin Navbar FULL SCREEN */
+
   .top-grid {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
+  /* .grid-speech {
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+  } */
+
   .grid {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+
   .top-text {
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 10% 10% 0 10%;
     margin: 0 0 10% 0;
   }
   
   /* .top-img {
     width: 100%;
-    min-height: 85%;
+    min-height: 80%;
     padding: 0 10% 0 0;
   } */
   
-  .top-heading {
+  /* .top-heading {
     font-size: 2.5rem;
-    line-height: 3.25rem;
-  }
+    line-height: 3rem;
+    color: #C0B283;
+    text-align: center;
+  } */
   
   /* .button {
     box-sizing: content-box;
@@ -120,7 +261,7 @@
   /* Content Boxes*/
   
   .container {
-    background-color: #fff;
+    background-color: #9F9FA6;
     width: 75%;
     margin: 2% 12.5%;
     box-shadow: 0 0 4px 4px rgba(233, 89, 70, 0.514);
@@ -139,7 +280,22 @@
     justify-content: center;
     padding: 0 10% 0 20%;
   }
-  
+
+  .main-text-speech-1, .main-text-speech-2, .main-text-speech-3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10% 0 20%; */
+  }
+
+  .main-text-speech-4 {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
   .main-img {
     padding: 3% 5%;
     width: 100%;
@@ -206,10 +362,11 @@
   /* Footer  */
   
   .footer-container {
-    background-color: #F97863;
-    background-image: url(../images/robert-katzki-unsplash-compress.jpg);
+    /* background-image: url(../images/bg-bottom-blk.jpg);
+    opacity: 90%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
+    background-color: #080A0D;
     width: 100%;
     z-index: 1;
     padding: 5% 0 5% 0;
@@ -274,11 +431,53 @@
     text-align: right;
     font-size: 1rem;
   } */
-  
+
+  /* @@@@@@ MEDIA QUERIES @@@@@@ */
+
+  /*Navbar*/
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      /* height: 100%;
+      overflow-y: hidden; */
+    }
+  }
+  /*Fin Navbar*/
+
   @media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    h1, h2, h3 {
+      font-size: 2rem;
+    }
+    
+    h4, h5, h6 {
+      font-size: 1.75rem;
+    }
   
     .top-container {
-      background-image: url(../images/robert-katzki-unsplash-resize.jpg);
+      /* background-image: url(../images/bg-top-blk.jpg);
+      opacity: 90%; */
+      background-color: #080A0D;
       padding: 0;
     }
   
@@ -304,11 +503,14 @@
   
     .grid {
       grid-template-columns: 100%;
-      grid-template-areas: "text"
+      grid-template-areas: "text";
     }
   
     .top-text {
+      display: flex;
+      flex-flow: column;
       align-items: center;
+      justify-content: center;
       padding: 0 5% 0 5%;
       margin:0;
     }
@@ -318,7 +520,7 @@
       padding: 0 10% 0 10%;
     } */
   
-    .top-paragraph {
+    .top-speech {
       align-items: center;
       padding: 0 4% 5% 4%;
     }
@@ -327,7 +529,7 @@
       min-height: 500px;
     }
   
-    .heading, .main-text, .main-img, .top-paragraph, .top-heading/*, .cpright*/ {
+    .heading, .main-text, .main-img, .top-speech, .top-heading/*, .cpright*/ {
       text-align: center;
     }
   
@@ -342,7 +544,7 @@
     }
 
     .footer-container {
-      background-image: url(../images/robert-katzki-unsplash-resize.jpg);
+      background-color: #373737;
       padding: 0;
     }
   
@@ -380,3 +582,144 @@
     /* .cpright {
       font-size: 0.9rem
     } */
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 768px;
+    min-height: 551px;
+    margin: auto;
+    display: flex;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
+    order: 1;
+  }
+
+  /* .container-buttons {
+    display: flex;
+    align-items: center;
+  } */
+
+  .prev {
+    /* display: flex; */
+    order: 0;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* position: absolute; */
+    /* top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px; */
+    color: #373737;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    /* right: 0; */
+    border-radius: 3px 0 0 3px;
+    order: 99;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    text-decoration: none;
+    /* background-color: rgba(0,0,0,0.8); */
+  }
+
+  /* Caption text */
+  .text {
+    color: #373737;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    /* position: absolute; */
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+    /* vertical-align: middle; */
+  }
+
+  .image-container {
+    min-height: 208px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .slide1 {
+    background-image: url(../images/salon-woman.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slide2 {
+    background-image: url(../images/object-blue.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slide3 {
+    background-image: url(../images/office-woman.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #373737;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    /* position: absolute; */
+    top: 0;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
