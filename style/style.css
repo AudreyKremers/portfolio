@@ -1,5 +1,10 @@
 /* saumon logo : #F5CA99 */
 /* rouge logo : #E95846 */
+/* faded denim blue: #778FA8 */
+/* faded turquoise blue: #7799a8 */
+/* faded petrol blue : #2c3949 */
+/* faded off-white blue : #ecf9ff */
+/* faded clear sky blue : #daf4ff */
 
 /* 
 font-family: 'Cabin Sketch', cursive;
@@ -20,42 +25,37 @@ font-family: 'Raleway', sans-serif;
   }
   
   body {
-    /* background: linear-gradient(#170010, #1A1739, #0E4351);
-    background: radial-gradient(#170010, #1A1739, #0E4351); */
-    background-color: #080A0D;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    background-color: #2c3949;
     font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-    color: #9F9FA6;
+    color: #cde4ff;
     /* font-size: calc (21px + (30 - 21) * ((100vw - 768px) / (1600 - 768))); */
   }
   /*Avec la fonction font-size: calc*/
   /* @media screen and (max-width: 768px) { body { font-size: 21px; } } 
   @media screen and (min-width: 1600px) { body { font-size: 30px; } }  */
-  
-  h1, h2, h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 2.75rem;
-    color: ;
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: unset;
+    font-weight: normal;
+    margin-block-start: unset;
+    margin-block-end: unset;
   }
-  
-  h4, h5, h6 {
-    font-family: 'Cabin Sketch', cursive;
-    font-weight: 700;
-    font-size: 2.25rem;
-  }
-  
   li {
     margin-bottom: 15px;
     list-style-type: none;
   }
+  .uppercase-word {
+    text-transform: uppercase;
+  }
+  .minimize-word {
+    font-size: small;
+  }
   
-  /* Top Row  */
-  
-  .top-container {
-    height: 70%;
+  /* .home-container { */
+    /* height: 70%; */
     /* margin: 0 0 7% 0; */
     /* padding: 0 7% 0 7%; */
     /* background-image: url(../images/bg-top-blk.jpg);
@@ -63,214 +63,378 @@ font-family: 'Raleway', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    background-color: #080A0D;
+    /* background-color: #2c3949; */
+  /* } */
+
+  /* !!!!!! NAVBAR !!!!!! */
+  /* Navbar Mobile*/
+  @media screen and (min-width: 320px) and (max-width: 768px){
+    .navbar-desk {
+      display: none;
+    }
+    /* The overlay background */
+    .navbar-overlay {
+      /* height: 0; & width: 100%; & overflow-y: hidden; in place of overflow-x = the overlay appear from left to right */   
+      height: 100%;
+      width: 0;
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      background-color: #3f5268;
+      /* background-color: rgb(0,0,0); Black fallback color */
+      /* background-color: rgba(0,0,0, 0.9); Black w/opacity */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    /* Position the content inside the overlay */
+    .navbar-overlay-content {
+      position: relative;
+      top: 25%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      text-align: center; /* Centered text/links */
+      margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    /* The navigation links inside the overlay */
+    .navbar-overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    /* When you mouse over the navigation links, change their color */
+    .navbar-overlay a:hover, .navbar-overlay a:focus {
+      color: #f1f1f1;
+    }
+    /* Position the close button (top right corner) */
+    .navbar-overlay .navbar-cross {
+      position: absolute;
+      right: 50px;
+      top: 13px;
+      /* right: 50%;
+      top: 130px; */
+      width: 32px;
+      height: 32px;
+    }
+    .navbar-overlay .navbar-cross:hover {
+      opacity: 1;
+    }
+    .navbar-overlay .navbar-cross:before, .navbar-overlay .navbar-cross:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 33px;
+      width: 2px;
+      background-color: #FFFFFF;
+    }
+    .navbar-overlay .navbar-cross:before {
+      transform: rotate(45deg);
+    }
+    .navbar-overlay .navbar-cross:after {
+      transform: rotate(-45deg);
+    }
   }
-  
-  /* .top-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 3% 10% 3%;
-  }
-  
-  .top-logo {
-    height: 95%;
-  }
-  
-  .top-button {
-    box-sizing: content-box;
-    min-width: 150px;
-    width: 16%;
-    height: 3rem;
-    border-radius: 28px;
-    text-shadow: 1px 1px 2px #666666;
-    box-shadow: 0 0 3px #666666;
-    color: #000000;
-    background: #ffffff;
-    border: solid hsl(208, 11%, 55%) 1px;
-    text-decoration: none;
-  }
-  
-  .top-button:hover {
-    text-decoration: none;
-    cursor: pointer;
-  }
-   */
-
-  /* Top Container Content */
-
-  /* Navbar desk*/
-
-  /* Add a black background color to the top navigation */
-  /* .topnav {
-    background-color: #202126;
-    overflow: hidden;
-  } */
-
-  /* Style the links inside the navigation bar */
-  /* .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  } */
-
-  /* Change the color of links on hover */
-  /* .topnav a:hover {
-    background-color: #656773;
-    color: white;
-    text-decoration: none;
-  } */
-
-  /* Add an active class to highlight the current page */
-  /* .topnav a.active {
-    background-color: #080A0D;
-    color: white;
-    text-decoration: none;
-  } */
-
-  /* Hide the link that should open and close the topnav on small screens */
-  /* .topnav .icon {
-    display: none;
-  } */
-  /* Fin Navbar */
-
-  /* Navbar FULL SCREEN */
-
-  /* The Overlay (background) */
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 0;
-    width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-y: hidden; /* Disable vertical scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-
-  /* .icon {
-    display: none;
-  } */
-
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
+  /* @media screen and (max-height: 450px) {
+    .navbar-overlay a {font-size: 20px}
+    .navOoverlay .closebtn {
       font-size: 40px;
       top: 15px;
       right: 35px;
     }
-  }
-  /* Fin Navbar FULL SCREEN */
-
-  .top-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  /* .grid-speech {
-    display: grid;
-    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
   } */
-
-  .grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  .top-text {
+  .navbar-mobile{
+    padding: 20px;
     display: flex;
-    flex-flow: column;
+    justify-content: flex-end;
+    /*     justify-content: space-between;
+    align-content: flex-end;
+    align-items: center; */
+  }
+  .navbar-trigger{
+    position: relative;
+    width: 26px;
+    height: 18px;
+    transition: .3s ease-out;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .navbar-triggerTopRight, .navbar-triggerMiddle, .navbar-triggerBottomLeft{
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #cde4ff;
+  }
+  .navbar-triggerTopRight{
+      top: 0;
+  }
+  .navbar-triggerMiddle{
+      top: 50%;
+      transform: translateY(-50%)
+  }
+  .navbar-triggerBottomLeft{
+      bottom: 0;
+  }
+  /* FIN Navbar mobile */
+  /* Navbar desk*/
+  @media screen and (min-width: 769px) {
+    .navbar-mobile {
+      display: none;
+    }
+    /* Add a black background color to the top navigation */
+    .navbar-desk {
+      display: flex;
+      justify-content: center;
+      background-color: #2c3949;
+      overflow: hidden;
+    }
+    /* Style the links inside the navigation bar */
+    .navbar-desk a {
+      /* float: left;
+      display: block; */
+      width: 115px;
+      margin: 20px 15px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      background: #2c3949;
+      box-shadow: -10px 10px 20px #1d252f, 
+                  10px -10px 20px #3b4d63;
+      font-size: 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      color: #e6f1ff;
+    }
+    /* Change the color of links on hover */
+    .navbar-desk a:hover {
+      border-radius: 15px;
+      background: linear-gradient(225deg, #2f3d4e, #283342);
+      box-shadow: -10px 10px 20px #1d252f, 
+                  10px -10px 20px #3b4d63;
+      color: #e6f1ff;
+      text-decoration: none;
+    }
+    /* Add an active class to highlight the current page */
+    .navbar-desk a.active {
+      border-radius: 15px;
+      background: #2c3949;
+      box-shadow: inset -10px 10px 20px #1d252f, 
+                  inset 10px -10px 20px #3b4d63;
+      color: #cde4ff;
+      text-decoration: none;
+    }
+  }
+  /* FIN Navbar desk*/
+  /* !!!!!! FIN NAVBAR !!!!!! */
+
+  .home-text {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10% 10% 0 10%;
-    margin: 0 0 10% 0;
-  }
-  
-  /* .top-img {
-    width: 100%;
-    min-height: 80%;
-    padding: 0 10% 0 0;
-  } */
-  
-  /* .top-heading {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    color: #C0B283;
     text-align: center;
-  } */
-  
-  /* .button {
-    box-sizing: content-box;
-    width: 40%;
-    margin: 5% 0;
-    min-width: 200px;
-    height: 3.4rem;
-    border-radius: 28px;
-    text-shadow: 1px 1px 2px #666666;
-    box-shadow: 0 0 3px #666666;
-    color: #fff;
-    background: hsl(322, 100%, 66%);
-    border: solid hsl(208, 11%, 55%) 1px;
-    text-decoration: none;
   }
-  
-  .button:hover {
-    text-decoration: none;
-    cursor: pointer;
+  .home-text1 {
+    margin: 15px 0;
+    font-size: 2.8rem;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+  /* .home-text2 {
+    margin: 15px 0;
+    font-size: 2.8rem;
+    color: #FFF;
+    text-transform: uppercase;
   } */
+  .home-text2 {
+    margin: 15px 0 5px;
+    font-size: 2rem;
+    color: #FFF;
+  }
+  .home-text3 {
+    margin: 10px 0 5px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #FFF;
+  }
+  .home-button {
+    border-radius: 15px;
+    background: #2c3949;
+    box-shadow: -10px 10px 20px #1d252f, 
+                10px -10px 20px #3b4d63;
+    color: #e6f1ff;
+    margin: 20px 0;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .home-button:hover{
+    border-radius: 15px;
+    background: linear-gradient(225deg, #2f3d4e, #283342);
+    box-shadow: -10px 10px 20px #1d252f, 
+                10px -10px 20px #3b4d63;
+    color: #cde4ff;
+  }
   
   /* Content Boxes*/
+
+  /* Slideshow container */
+  .slideshow-flex-a {
+    /* max-width: 768px;
+    min-height: 551px; */
+    margin: auto;
+    display: flex;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin: 0 15px 0 15px;
+    padding: 0 15px 0 15px;
+    order: 1;
+  }
+
+  .prev {
+    /* display: flex; */
+    order: 0;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* position: absolute; */
+    /* top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px; */
+    color: #373737;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    /* right: 0; */
+    border-radius: 3px 0 0 3px;
+    order: 99;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    text-decoration: none;
+    /* background-color: rgba(0,0,0,0.8); */
+  }
+
+  /* Caption text */
+  .slideshow-text {
+    color: #373737;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    /* position: absolute; */
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+    /* vertical-align: middle; */
+  }
+
+  .slideshow-img {
+    height: 208px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .textSlide1 {
+    background-image: url(../images/salon-woman.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .textSlide2 {
+    background-image: url(../images/object-blue.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .textSlide3 {
+    background-image: url(../images/office-woman.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #373737;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    /* position: absolute; */
+    top: 0;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
   
-  .container {
+  .works-container {
     background-color: #9F9FA6;
     width: 75%;
     margin: 2% 12.5%;
     box-shadow: 0 0 4px 4px rgba(233, 89, 70, 0.514);
     border-radius: 20px;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
   
   .heading {
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2;
+    color: #fff;
   }
   
   .main-text {
@@ -301,63 +465,29 @@ font-family: 'Raleway', sans-serif;
     width: 100%;
   }
 
-/* unvisited link */
-
+  /* unvisited link */
   a:link {
-    color: #E95846;
+    /* color: #E95846; */
     text-decoration: none;
   }
 
   /* visited link */
   a:visited {
-    color: #F97863;
+    /* color: #F97863; */
     text-decoration: none;
   }
 
   /* mouse over link */
   a:hover {
-    color: #D8402F;
+    /* color: #D8402F; */
     text-decoration: underline;
   }
 
   /* selected link */
   a:active {
-    color: #F5CA99;
+    /* color: #F5CA99; */
     text-decoration: underline;
   }
-  
-  /* Call to Action */
-  
-  /* .cta {
-    background-color: #fff;
-    width: 50%;
-    margin: 5% 25% 0;
-    box-shadow: 0 0 4px 4px #d9dde2;
-    border-radius: 20px;
-    position: relative;
-    top: 5rem;
-    z-index: 2;
-  }
-  
-  .cta-flex {
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-  }
-  
-  .bottom-text-btn-container {
-    padding: 0 0 5% 0;
-  }
-  
-  .button.bottom-text-btn {
-    width: 300px;
-    margin: 3% 0;
-  }
-  
-  .bottom-text-btn:hover {
-    text-decoration: none;
-    cursor: pointer;
-  } */
   
   /* Footer  */
   
@@ -366,7 +496,7 @@ font-family: 'Raleway', sans-serif;
     opacity: 90%;
     background-repeat: no-repeat;
     background-position: center;*/
-    background-color: #080A0D;
+    background-color: #2c3949;
     width: 100%;
     z-index: 1;
     padding: 5% 0 5% 0;
@@ -433,66 +563,39 @@ font-family: 'Raleway', sans-serif;
   } */
 
   /* @@@@@@ MEDIA QUERIES @@@@@@ */
-
-  /*Navbar*/
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {
-      position: relative;
-    }
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      /* height: 100%;
-      overflow-y: hidden; */
-    }
-  }
-  /*Fin Navbar*/
-
-  @media only screen and (min-width: 320px) and (max-width: 768px) {
-
-    h1, h2, h3 {
-      font-size: 2rem;
-    }
-    
-    h4, h5, h6 {
-      font-size: 1.75rem;
-    }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
   
-    .top-container {
+    /* .home-container { */
       /* background-image: url(../images/bg-top-blk.jpg);
       opacity: 90%; */
-      background-color: #080A0D;
+      /* background-color: #2c3949;
       padding: 0;
-    }
-  
-    .top-grid {
-      display: block;
-    }
-  
-    /* .top-row {
-      padding: 3% 3% 15%;
-    }
-  
-    .top-button {
-      height: 30px;
     } */
   
+    /* .home-text {
+      margin:10px 0 40px 0;
+    } */
+    .home-text1 {
+      font-size: 2.4rem;
+      /* margin: 40px 0; */
+    }
+    /* .home-text2 {
+      font-size: 1.8rem;
+      margin: 15px 0;
+    } */
+    .home-text2 {
+      font-size: 1.6rem;
+      /* margin: 25px 0 5px; */
+    }
+    .home-text3 {
+      font-size: 1.6rem;
+      /* margin: 5px 0 15px 0; */
+    }
+
+    .slideshow-img {
+      height: 104px;
+    }
+
     .main-text {
       grid-area: text;
     }
@@ -506,30 +609,11 @@ font-family: 'Raleway', sans-serif;
       grid-template-areas: "text";
     }
   
-    .top-text {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0 5% 0 5%;
-      margin:0;
-    }
-  
-    /* .top-img {
-      width: 50%;
-      padding: 0 10% 0 10%;
-    } */
-  
-    .top-speech {
-      align-items: center;
-      padding: 0 4% 5% 4%;
-    }
-  
-    .container {
+    .works-container {
       min-height: 500px;
     }
   
-    .heading, .main-text, .main-img, .top-speech, .top-heading/*, .cpright*/ {
+    .heading, .main-text, .main-img, .footer-text/*, .top-heading, .cpright*/ {
       text-align: center;
     }
   
@@ -537,23 +621,20 @@ font-family: 'Raleway', sans-serif;
       align-items: center;
       padding: 10% 5%;
     }
-  
-    .cta {
-      width: 95%;
-      margin: 5% 0 0 2.5%;
-    }
 
     .footer-container {
       background-color: #373737;
       padding: 0;
     }
-  
     .footer-grid {
       display: block;
       padding: 0;
       margin: 15% 0 0;
     }
-  
+    .footer-text {
+      align-items: center;
+      padding: 0 4% 5% 4%;
+    }
     .footer-item {
       margin: 0 2.5% 0 2.5%;
     }
@@ -582,144 +663,4 @@ font-family: 'Raleway', sans-serif;
     /* .cpright {
       font-size: 0.9rem
     } */
-  }
-
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 768px;
-    min-height: 551px;
-    margin: auto;
-    display: flex;
-  }
-
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-    margin: 0 15px 0 15px;
-    padding: 0 15px 0 15px;
-    order: 1;
-  }
-
-  /* .container-buttons {
-    display: flex;
-    align-items: center;
-  } */
-
-  .prev {
-    /* display: flex; */
-    order: 0;
-  }
-
-  /* Next & previous buttons */
-  .prev, .next {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    /* position: absolute; */
-    /* top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px; */
-    color: #373737;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    /* right: 0; */
-    border-radius: 3px 0 0 3px;
-    order: 99;
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    text-decoration: none;
-    /* background-color: rgba(0,0,0,0.8); */
-  }
-
-  /* Caption text */
-  .text {
-    color: #373737;
-    font-size: 1.5rem;
-    padding: 8px 12px;
-    /* position: absolute; */
-    bottom: 200px;
-    width: 100%;
-    text-align: center;
-    /* vertical-align: middle; */
-  }
-
-  .image-container {
-    min-height: 208px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* .slide1 {
-    background-image: url(../images/salon-woman.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .slide2 {
-    background-image: url(../images/object-blue.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .slide3 {
-    background-image: url(../images/office-woman.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  } */
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #373737;
-    font-size: 1.5rem;
-    padding: 8px 12px;
-    /* position: absolute; */
-    top: 0;
-    text-align: center;
-  }
-
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #000000;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
   }

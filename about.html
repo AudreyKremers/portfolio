@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet, then fonts, then fontawesome -->
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Cabin:400,400i|Raleway:700,700i&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/logoAudreyKremers35x35.jpg">
+  <title>Audrey Kremers portfolio | Web Developer | Brussels</title>
+  <script src="https://kit.fontawesome.com/932b8f3272.js"></script>
+</head>
+
+<body>
+  <main>
+    <nav>
+      <div class="navbar-desk">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+        <a href="works.html">My Works</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="navbar-mobile">
+        <div id="navbar-overlayFunctJS" class="navbar-overlay">
+
+          <span class="navbar-cross" onclick="closeNav()"></span>
+
+          <div class="navbar-overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Me</a>
+            <a href="works.html">My Works</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <span id="navbar-trigger-rotate" class="navbar-trigger" onclick="openNav()">
+          <div class="navbar-triggerTopRight"></div>
+          <div class="navbar-triggerMiddle"></div>
+          <div class="navbar-triggerBottomLeft"></div>
+        </span>
+      </div>
+    </nav>
+    <div class="home-text4">
+      <h3>HTML, CSS, JS, PHP, Vue.js, Laravel</h3>
+      <h3>Sass, Bootstrap, WordPress</h3>
+      <h3>Git, MySQL Workbench, BEE Pro, Email on Acid</h3>
+      <h3>Sketch, Figma</h3>
+      <h3>Responsive website, API, POO, MVC Pattern, AMP, Email Marketing Campaign</h3>
+    </div>
+    <!-- Slideshow container -->
+<!-- ATTENTION A CORRIGER : FIN SECTION AVANT class:"dot" !? P-ê mon problème alignement en moblie vien de là ???? -->
+    <section class="slideshow-container">
+      <div class="slideshow-flex-a">
+        <div class="mySlides fade">
+          <div class="slideshow-img"><img src="./images/salon-woman.svg"></div>
+          <div class="numbertext">De octobre à décembre 2018</div>
+          <div class="textSlide1">Après 15 ans d'expériences professionnelles, j'ai eu l'envie d'acquérir de nouvelles compétences. J'ai fait le point sur mes centres d'intérêts, mes attentes et le marché de l'emploi. Résultat : c'est le développement web qui m'a le plus attisé ma curiosité. J'ai facilement trouvé des leçons en ligne gâce à l'immense communauté de passionnés qui partagent leur savoir sur le sujet.</p><p class="text">Quelques semaines de familiarisation plus tard, les inscriptions sont ouvertes pour une formation en développement web de sept mois chez <a href="http://becode.org/" target="blank">BeCode</a>. Avant-gardiste, ils ont adopté la méthode pédagogique active qui est l'idéale pour moi. Enthousiaste, je candidate et suis invitée à la phase finale de sélection.</p><p class="text">90 candidats sont présents pour passer un entretien de motivation, des tests techniques et réaliser un exercice coopératif et créatif à présenter oralement. Comme j'y passais une journée exaltante, même si la concurrence était de taille, mon optimisme atteignait des sommets. Dès le lendemain, BeCode m'informa que j'étais l'une des 40 admis en formation développeur web.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="slideshow-img"><img src="./images/object-purple.svg"></div>
+          <div class="numbertext">De janvier à juillet 2019</div>
+          <div class="textSlide2"><p class="text">Entourée de 20 autres apprenants et deux coachs, Emily Marghella et Kevin Flabat, je n'ai cessé d'apprendre. Apprendre de façon autodidacte différents langages de programmation et frameworks. Apprendre avec méthodologie <i>- Scrum, Kanban -</i> à travailler en équipe. Apprendre à changer d'angle de vue lorsqu'une dificulté persiste.</p><p class="text">Apprendre à faire un inventaire de projet web afin de faire au client une proposition d'accord formel réaliste. Apprendre à manager une équipe et à gérer la relation client.</p><p class="text">En me soumetant à un rythme de travail croissant durant sept mois, BeCode m'a faite comprendre par expérience que la réussite d'un développeur web réside en sa capacité à se surpasser sans cesse en y prennant plaisir.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="slideshow-img"><img src="./images/office-woman.svg"></div>
+          <div class="numbertext">De août à novembre 2019</div>
+          <div class="textSlide3"><p class="text">J'effectuais ensuite un stage de trois mois chez EVO Group, expert en marketing de performance et stratégie web. Les tâches que Philippe Berton, chef du département IT, me confia étaient à exécuter seule. Au besoin, je recevais des indices des développeurs web de l'agence mais ils préservaient mon mode de pensée.</p><p class="text">Grâce à la bienveillance de mon chef et à son programme, mon CV compte deux compétences supplémentaires : le passage de pages web en AMP (Accelerated Mobile Pages) et la création de newsletters en HTML/CSS. À partir d'une maquette, j'ai également codé le nouveau site responsive d'EVO Group qui contient notamment un formulaire multi-step à validation dynamique.</p><p class="text">Mon aptitude à prendre soin des détails a été très appréciée. Les analystes de données marketing ont constaté une augmentation du taux de participation aux campagnes emailing que j'ai réalisée.</div>
+        </div>
+
+      
+        <!-- <div class="mySlides fade">
+          <div class="numbertext">Aujourd'hui</div>
+          <<img src="img5.jpg" style="width:100%">
+          <div class="text">Les langages et frameworks que j'affectionne sont : HTML, CSS, JavaScript, PHP, Sass, Vue.js et Laravel. <br>Mon éditeur de texte favori est Visual Studio Code. J'utilise fréquemment Git, Figma, Sketch, BEE Pro et Email on Acid. <br>Interessée par l'UX design, je souhaite apprendre auprès de spécialistes.</div>
+        </div> -->
+
+        <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+    <!-- <br> -->
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <footer class="footer-container">
+      <div class="footer-grid">
+
+          <div class="footer-item">
+            <p>Mon portfolio est 100 % responsive et est réalisé avec HTML & CSS.</p><p class="footer-text">Je recherche actuellement un stage de 3 mois entre mi-août et mi-novembre. J'aimerais travailler dans un environnement où l'analyse, la créativité et l'UX design ont un rôle prépondérant.</p><p class="footer-text">N'hésitez pas à me contacter afin d'en savoir plus sur mon parcours et ce que je pourrais apporter à votre équipe.</p>
+          </div>
+          <div class="footer-item">
+            <ul>
+              <li>
+                <div class="email">
+                <img class="footer-img" src="images/icon-email.svg" alt="email-icon">
+                <a class="contactPresLink" target="_blank" href="mailto:audreykrem@gmail.com">
+                <b class="mail">audreykrem@gmail.com</b>
+                </a>
+              </div>
+              </li>
+              <li class="fab-grid">
+                <a href="https://www.linkedin.com/in/audrey-kremers-433776178/">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/AudreyKremers">
+                <i class="fab fa-github-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="cpright">
+        &copy; Copyright 2019 Audrey Kremers. Tous droits réservés.
+      </div> -->
+    </footer>
+  </main>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

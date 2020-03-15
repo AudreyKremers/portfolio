@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet, then fonts, then fontawesome -->
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Cabin:400,400i|Raleway:700,700i&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/logoAudreyKremers35x35.jpg">
+  <title>Audrey Kremers portfolio | Web Developer | Brussels</title>
+  <script src="https://kit.fontawesome.com/932b8f3272.js"></script>
+</head>
+
+<body>
+  <main>
+    <nav>
+        <div class="navbar-desk">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="works.html" class="active">My Works</a>
+          <a href="contact.html">Contact</a>
+        </div>
+  
+        <div class="navbar-mobile">
+          <div id="navbar-overlayFunctJS" class="navbar-overlay">
+  
+            <span class="navbar-cross" onclick="closeNav()"></span>
+  
+            <div class="navbar-overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Me</a>
+              <a href="works.html" class="active">My Works</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          
+          <span id="navbar-trigger-rotate" class="navbar-trigger" onclick="openNav()">
+            <div class="navbar-triggerTopRight"></div>
+            <div class="navbar-triggerMiddle"></div>
+            <div class="navbar-triggerBottomLeft"></div>
+          </span>
+        </div>
+    </nav>
+
+    <section class="works-container">
+      <div class="grid">
+        <div class="main-text">
+          <h2 class="heading">HTML | CSS</h2>
+          <p>Website onepage, reproduction d'un mockup.<br />Projet de groupe, en 5 jours, après 2 semaines de formation.</p>
+          <a href="https://github.com/AudreyKremers/Main-Eventer" target="blank">Mon repo GitHub</a>
+          <a href="https://jmbroutin.github.io/Main-Eventer/" target="blank">Site à visiter ici !</a>
+        </div>
+        <div>
+          <img class="main-img" src="images/Onepage-Main-Eventer_OurWork-min.jpg" alt="projet-mockup-website-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="works-container">
+      <div class="grid">
+        <div>
+          <img class="main-img" src="images/Melting-Pot-Accueil-min.jpeg" alt="projet-resto-website-img">
+        </div>
+        <div class="main-text">
+          <h2 class="heading">HTML | Bootsrap | JavaScript</h2>
+          <p>Website responsive d'une chaîne de restaurant fictive.<br />Projet réalisé seule, en 5 jours, après 1 mois de formation.</p>
+          <a href="https://github.com/AudreyKremers/bootstrap-resto-website" target="blank">Mon repo GitHub</a>
+          <a href="https://audreykremers.github.io/bootstrap-resto-website/" target="blank">Site à visiter ici !</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-container">
+      <div class="grid">
+        <div class="main-text">
+          <h2 class="heading">VueJS | API | Bootstrap | Figma</h2>
+          <p>Réalisation d'un mockup avec Figma d'une app météo et développement de cette dernière.<br />Projet réalisé à 2, en 5 jours, après 3 mois de formation.</p>
+            <a href="https://github.com/AudreyKremers/miniWeather" target="blank">Mon repo GitHub</a>
+            <a href="https://jpscheppers.github.io/miniWeather/" target="blank">App à visiter ici !</a>
+        </div>
+        <div>
+          <img class="main-img" src="images/miniWeather-min.jpeg" alt="projet-app-météo-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="works-container">
+		<div class="grid">
+		  <div>
+			<img class="main-img" src="images/chat-app-nodejs.jpeg" alt="projet-chat-img">
+		  </div>
+		  <div class="main-text">
+			<h2 class="heading">Node JS | MongoDB | Socket.IO</h2>
+			<p>Chat avec Socket.IO pour une communication bidirectionnelle en temps réel entre les clients Web et les serveurs et MongoDB comme système de base de données.<br />Projet réalisé seule, en 5 jours, après 4 mois de formation.</p>
+			<a href="https://github.com/AudreyKremers/chat_node" target="blank">Mon repo GitHub</a>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="works-container">
+			<div class="grid">
+			  <div class="main-text">
+				<h2 class="heading">WordPress</h2>
+				<p>Rôle de chef de projet et développeuse pour un projet client.<br />Projet de groupe, en 5 jours, après 4 mois de formation.</p>
+				  <a href="https://github.com/AudreyKremers/weKULT_PiloteMedia" target="blank">Mon repo GitHub</a>
+				  <a href="https://wordpress.webtech.one/doro/weekult/" target="blank">Site à visiter ici !</a>
+			  </div>
+			  <div>
+				<img class="main-img" src="images/weKULT-min.jpeg" alt="projet-client-img">
+			  </div>
+			</div>
+		</section>
+
+		<section class="works-container">
+			<div class="grid">
+			  <div>
+				<img class="main-img" src="images/canvasjs.jpeg" alt="dessins-canvasjs-img">
+			  </div>
+			  <div class="main-text">
+				<h2 class="heading">HTML | CanvasJS</h2>
+				<p>Pour le fun, dessins réalisés avec CanvasJS.<br />Projet réalisé seule, en 2 jours, après 1 mois de formation.</p>
+				<a href="https://github.com/AudreyKremers/CanvasJS" target="blank">Mon repo GitHub</a>
+			  </div>
+			</div>
+		</section>
+
+        <footer class="footer-container">
+            <div class="footer-grid">
+      
+                <div class="footer-item">
+                  <p>Mon portfolio est 100 % responsive et est réalisé avec HTML & CSS.</p><p class="footer-text">Je recherche actuellement un stage de 3 mois entre mi-août et mi-novembre. J'aimerais travailler dans un environnement où l'analyse, la créativité et l'UX design ont un rôle prépondérant.</p><p class="footer-text">N'hésitez pas à me contacter afin d'en savoir plus sur mon parcours et ce que je pourrais apporter à votre équipe.</p>
+                </div>
+                <div class="footer-item">
+                  <ul>
+                    <li>
+                      <div class="email">
+                      <img class="footer-img" src="images/icon-email.svg" alt="email-icon">
+                      <a class="contactPresLink" target="_blank" href="mailto:audreykrem@gmail.com">
+                      <b class="mail">audreykrem@gmail.com</b>
+                      </a>
+                    </div>
+                    </li>
+                    <li class="fab-grid">
+                      <a href="https://www.linkedin.com/in/audrey-kremers-433776178/">
+                      <i class="fab fa-linkedin"></i>
+                      </a>
+                      <a href="https://github.com/AudreyKremers">
+                      <i class="fab fa-github-square"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="cpright">
+              &copy; Copyright 2019 Audrey Kremers. Tous droits réservés.
+            </div> -->
+        </footer>
+  </main>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

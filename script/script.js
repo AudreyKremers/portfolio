@@ -1,26 +1,20 @@
-/* Navbar */
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-// function navResponsive() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
-/* Fin Navbar */
-/* Navbar FULL SCREEN */
-/* Open when someone clicks on the span element */
+/* NAVBAR FULL SCREEN OVERLAY */
+var trigger = document.getElementById("navbar-trigger-rotate");
 function openNav() {
-  document.getElementById("myNav").style.height = "100%";
+  trigger.style.transform = "rotate(90deg)";
+  trigger.style.opacity= "0.3";
+  document.getElementById("navbar-overlayFunctJS").style.width = "100%";
 }
+
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
+  trigger.style.transform = "rotate(180deg)";
+  trigger.style.opacity = "1";
+  document.getElementById("navbar-overlayFunctJS").style.width = "0%";
 }
-/* Fin Navbar FULL SCREEN */
+/* FIN NAVBAR FULL SCREEN OVERLAY */
 
-/* Slideshow */
+/* SLIDESHOW */
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -49,3 +43,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+/* FIN SLIDESHOW */

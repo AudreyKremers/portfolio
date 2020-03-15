@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet, then fonts, then fontawesome -->
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Cabin:400,400i|Raleway:700,700i&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/logoAudreyKremers35x35.jpg">
+  <title>Audrey Kremers portfolio | Web Developer | Brussels</title>
+  <script src="https://kit.fontawesome.com/932b8f3272.js"></script>
+</head>
+
+<body>
+  <main>
+    <nav>
+        <div class="navbar-desk">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="works.html">My Works</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+  
+        <div class="navbar-mobile">
+          <div id="navbar-overlayFunctJS" class="navbar-overlay">
+  
+            <span class="navbar-cross" onclick="closeNav()"></span>
+  
+            <div class="navbar-overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Me</a>
+              <a href="works.html">My Works</a>
+              <a href="contact.html" class="active">Contact</a>
+            </div>
+          </div>
+          
+          <span id="navbar-trigger-rotate" class="navbar-trigger" onclick="openNav()">
+            <div class="navbar-triggerTopRight"></div>
+            <div class="navbar-triggerMiddle"></div>
+            <div class="navbar-triggerBottomLeft"></div>
+          </span>
+        </div>
+    </nav>
+
+    <section class="contact-container">
+
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer-grid">
+  
+            <div class="footer-item">
+              <p>Mon portfolio est 100 % responsive et est réalisé avec HTML & CSS.</p><p class="footer-text">Je recherche actuellement un stage de 3 mois entre mi-août et mi-novembre. J'aimerais travailler dans un environnement où l'analyse, la créativité et l'UX design ont un rôle prépondérant.</p><p class="footer-text">N'hésitez pas à me contacter afin d'en savoir plus sur mon parcours et ce que je pourrais apporter à votre équipe.</p>
+            </div>
+            <div class="footer-item">
+              <ul>
+                <li>
+                  <div class="email">
+                  <img class="footer-img" src="images/icon-email.svg" alt="email-icon">
+                  <a class="contactPresLink" target="_blank" href="mailto:audreykrem@gmail.com">
+                  <b class="mail">audreykrem@gmail.com</b>
+                  </a>
+                </div>
+                </li>
+                <li class="fab-grid">
+                  <a href="https://www.linkedin.com/in/audrey-kremers-433776178/">
+                  <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/AudreyKremers">
+                  <i class="fab fa-github-square"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="cpright">
+          &copy; Copyright 2019 Audrey Kremers. Tous droits réservés.
+        </div> -->
+    </footer>
+  </main>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
